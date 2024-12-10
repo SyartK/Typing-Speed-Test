@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Typing Speed Test</h1>
+    <p id="text-to-type">The quick brown fox jumps over the lazy dog.</p>
+    <textarea id="text-input" placeholder="Start typing here..." disabled></textarea>
+    <div class="time-options">
+      <label>
+        <input type="radio" name="time-option" value="15" checked> 15 seconds
+      </label>
+      <label>
+        <input type="radio" name="time-option" value="30"> 30 seconds
+      </label>
+      <label>
+        <input type="radio" name="time-option" value="60"> 1 minute
+      </label>
+    </div>
+    <p id="timer">Time Left: 0s</p>
+    <div class="results">
+      <p id="wpm">Words per Minute: 0</p>
+      <p id="accuracy">Accuracy: 0%</p>
+    </div>
+
+<button id="restart-button">Restart Test</button>
+
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

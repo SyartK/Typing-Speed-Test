@@ -1,0 +1,141 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background-attachment: fixed;
+  }
+  
+  .container {
+    text-align: center;
+    background: #222222; 
+    color: #ffffff; 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+    width: 100%;
+    max-width: 650px;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  
+  #text-to-type {
+    font-size: 22px;
+    font-weight: 500;
+    color: #dddddd; 
+    margin: 20px 0;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+  }
+  
+  #text-input {
+    width: 100%;
+    height: 120px;
+    margin: 20px 0;
+    padding: 1px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    resize: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #333333; 
+    color: #f0f0f0;
+  }
+  
+  #text-input:disabled {
+    background-color: #555555;
+  }
+  
+  #text-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+    outline: none;
+  }
+  
+  .time-options {
+    margin: 20px 0;
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+  .time-options label {
+    margin: 0 35px;
+    cursor: pointer;
+  }
+  
+  #timer {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  
+  .results {
+    margin: 30px 0;
+  }
+  
+  .results p {
+    font-size: 18px;
+    margin: 8px 0;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  
+  #restart-button {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #restart-button:hover {
+    background-color: #0056b3;
+  }
+  
+  #restart-button:focus {
+    outline: none;
+  }
+  
+  #error-word {
+    color: red;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    #text-input {
+      font-size: 16px;
+      height: 100px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    #timer, .results p {
+      font-size: 16px;
+    }
+  
+    #restart-button {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+  
